@@ -1,0 +1,346 @@
+[37mets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_[37mdrv:0x00,q_d[37mrv:0x00,d_d[37mr[37mv:0x00,cs0_[37md[37mrv:0x00,hd_[37md[37mrv:0x00,wp[37m_[37mdrv:0x00
+m[37mo[37mde:DIO, cl[37mo[37mck div:2
+l[37mo[37mad:0x3fff00[37m3[37m0,len:7172[37m[37m
+load:0x400[37m7[37m8000,len:15[37m7[37m36
+load:0x[37m4[37m0080400,le[37mn[37m:4
+load:0x[37m4[37m0080404,le[37mn[37m:3944
+entr[37my[37m 0x40080654[37m[37m
+[37m[37m[[37m0;32mI (2[37m9[37m) boot: ESP[37m-IDF 5.2.1 [37m2[37mnd stage bo[37mo[37mtloader[0[37mm[37m
+[0;32mI[37m [37m(29) boot: [37mc[37mompile time[37m [37mApr  9 202[37m4[37m 21:19:23[[37m0[37mm
+[0;32m[37mI[37m (29) boot:[37m [37mMulticore [37mb[37mootloader[[37m0[37mm
+[0;32m[37mI[37m (33) boot:[37m [37mchip revis[37mi[37mon: v1.0[0[37mm[37m
+[0;32mI [37m([37m37) boot.e[37ms[37mp32: SPI S[37mp[37meed      : [37m4[37m0MHz[0m
+[37m[[37m0;32mI (41[37m)[37m boot.esp3[37m2[37m: SPI Mode [37m [37m     : DIO[37m[[37m0m
+[0;32[37mm[37mI (46) boo[37mt[37m.esp32: SPI[37m [37mFlash Size [37m:[37m 4MB[0m
+[37m[37m[0;32mI (51[37m)[37m boot: Ena[37mb[37mling RNG ea[37mr[37mly entropy[37m [37msource...[[37m0[37mm
+[0;32m[37mI[37m (56) boot:[37m [37mPartition [37mT[37mable:[0m
+[37m[37m[0;32mI (6[37m0[37m) boot: ## [37mL[37mabel      [37m [37m     Usage [37m [37m        Typ[37me[37m ST Offset[37m [37m  Length[0[37mm[37m
+[0;32mI[37m [37m(67) boot:[37m [37m 0 nvs     [37m [37m        Wi[37mF[37mi data     [37m [37m  01 02 000[37m0[37m9000 00006[37m0[37m00[0m
+[0[37m;[37m32mI (74) [37mb[37moot:  1 phy[37m_[37minit      [37m [37m  RF data  [37m [37m       01 [37m0[37m1 0000f000 [37m0[37m0001000[0[37mm[37m
+[0;32mI [37m([37m82) boot: [37m [37m2 factory  [37m [37m       fac[37mt[37mory app    [37m [37m 00 00 000[37m1[37m0000 001000[37m0[37m0[0m
+[0;[37m3[37m2mI (89) b[37mo[37mot: End of [37mp[37martition t[37ma[37mble[0m
+[[37m0[37m;32mI (93)[37m [37mesp_image: [37ms[37megment 0: [37mp[37maddr=000100[37m2[37m0 vaddr=3f[37m4[37m00020 size=[37m2[37m130ch (135[37m9[37m48) map[0m[37m[37m
+[37m[37m[[37m0;32mI (1[37m5[37m1) esp_i[37mm[37mage: segmen[37mt[37m 1: paddr=[37m0[37m0031334 vad[37md[37mr=3ffbdb60[37m [37msize=04898h[37m [37m( 18584) l[37mo[37mad[0m
+[0[37m;[37m32mI (159)[37m [37mesp_image: [37ms[37megment 2: [37mp[37maddr=00035b[37md[37m4 vaddr=40[37m0[37m80000 size=[37m0[37ma444h ( 42[37m0[37m52) load[0[37mm[37m
+[37m[37m[[37m0;32[37mm[37mI (176) es[37mp[37m_image: se[37mg[37mment 3: pad[37md[37mr=00040020 [37mv[37maddr=400d0[37m0[37m20 size=82[37m9[37m0ch (534796[37m)[37m map[0m
+[37m[37m[0;32mI (370[37m) esp_image:[37m [37msegment 4:[37m [37mpaddr=000c2[37m9[37m34 vaddr=4[37m0[37m08a444 size[37m=[37m0edb0h ( 60[37m8[37m48) load[[37m0[37mm
+[37m[37m[[37m0;32mI (4[37m0[37m8) boot: L[37mo[37maded app f[37mr[37mom partitio[37mn[37m at offset [37m0[37mx10000[0m[37m[37m
+[0;32mI [37m([37m408) boot: [37mD[37misabling RN[37mG[37m early ent[37mr[37mopy source.[37m.[37m.[0m
+[0[37m;[37m32mI (419) [37mc[37mpu_start: [37mM[37multicore ap[37mp[37m[0m
+[37m[37m[0[37m;[37m32mI (428) [37mc[37mpu_start: [37mP[37mro cpu star[37mt[37m user code[37m[[37m0m
+[0;32[37mm[37mI (428) cpu[37m_[37mstart: cpu[37m [37mfreq: 16000[37m0[37m000 Hz[0m[37m[37m
+[0;32mI ([37m4[37m28) cpu_st[37ma[37mrt: Applica[37mt[37mion inform[37ma[37mtion:[0m
+[37m[37m[0;32mI (4[37m3[37m1) cpu_star[37mt[37m: Project n[37ma[37mme:     BL[37mE[37m_esp32[0m[37m
+[37m[0;32mI ([37m437) cpu_sta[37mr[37mt: App ver[37ms[37mion:      1[37m[37m[0m
+[0;3[37m2[37mmI (441) cp[37mu[37m_start: Co[37mm[37mpile time: [37m [37m   Apr  9 [37m2[37m024 21:18:3[37m8[37m[0m
+[0;[37m3[37m2mI (447) c[37mp[37mu_start: E[37mL[37mF file SHA2[37m5[37m6:  31cb6d[37m5[37m13...[0m
+[37m[37m[0;32mI (45[37m2[37m) cpu_star[37mt[37m: ESP-IDF:[37m [37m         5.[37m2[37m.1[0m
+[0[37m;[37m32mI (457)[37m [37mcpu_start:[37m [37mMin chip re[37mv[37m:     v0.0[37m[[37m0m
+[0;32[37mm[37mI (462) cp[37mu[37m_start: Max[37m [37mchip rev:  [37m [37m  v3.99 [[37m0[37mm
+[0;32mI[37m [37m(467) cpu_[37ms[37mtart: Chip[37m [37mrev:       [37m [37m v1.0[0m
+[37m[37m[0;32mI (4[37m7[37m2) heap_ini[37mt[37m: Initiali[37mz[37ming. RAM av[37ma[37milable for [37md[37mynamic all[37mo[37mcation:[0[37mm[37m
+[0;32mI [37m([37m479) heap_[37mi[37mnit: At 3FF[37mA[37mFF10 len 00[37m0[37m000F0 (0 K[37mi[37mB): DRAM[0[37mm[37m
+[0;32mI[37m [37m(485) heap_[37mi[37mnit: At 3F[37mF[37mB6388 len 0[37m0[37m001C78 (7 [37mK[37miB): DRAM[[37m0[37mm
+[0;32m[37mI[37m (491) heap[37m_[37minit: At 3[37mF[37mFB9A20 len [37m0[37m0004108 (1[37m6[37m KiB): DRAM[37m[37m[0m
+[0;3[37m2[37mmI (497) he[37ma[37mp_init: At[37m [37m3FFC6F58 le[37mn[37m 000190A8 ([37m1[37m00 KiB): D[37mR[37mAM[0m
+[[37m0[37m;32mI (503)[37m [37mheap_init: [37mA[37mt 3FFE0440[37m [37mlen 00003A[37mE[37m0 (14 KiB):[37m [37mD/IRAM[0m[37m
+[37m[0;32mI ([37m5[37m10) heap_i[37mn[37mit: At 3FFE[37m4[37m350 len 00[37m0[37m1BCB0 (111 [37mK[37miB): D/IRAM[37m[37m[0m
+[0;3[37m2[37mmI (516) he[37ma[37mp_init: At[37m [37m400991F4 le[37mn[37m 00006E0C [37m([37m27 KiB): IR[37mA[37mM[0m
+[0[37m;[37m32mI (524) [37ms[37mpi_flash: [37md[37metected chi[37mp[37m: generic[37m[[37m0m
+[0;32m[37mI[37m (527) spi[37m_[37mflash: flas[37mh[37m io: dio[0[37mm[37m
+[0;32mI[37m [37m(532) coex[37mi[37mst: coex fi[37mr[37mmware versi[37mo[37mn: 77cd7f8[37m[37m[0m
+[0;32[37mm[37mI (537) ma[37mi[37mn_task: Sta[37mr[37mted on CPU[37m0[37m[0m
+[0;3[37m2[37mmI (547) m[37ma[37min_task: C[37ma[37mlling app_m[37ma[37min()[0m
+[37m[37m[0[37m;[37m32mI (587) [37mB[37mTDM_INIT: [37mB[37mT controll[37me[37mr compile v[37me[37mrsion [0f0c[37m5[37ma2][0m
+[37m[[37m0;32mI (58[37m7[37m) BTDM_INIT[37m:[37m Bluetooth [37mM[37mAC: 24:62:[37ma[37mb:f2:2f:56[37m[37m[0m
+[0;32[37mm[37mI (587) phy[37m_[37minit: phy_[37mv[37mersion 4791[37m,[37m2c4672b,De[37mc[37m 20 2023,16[37m:[37m06:06[0m[37m
+[37m[37m[[37m0;32mI (9[37m7[37m7) GATTC: R[37mE[37mG_EVT[0m[37m
+[37m[0;32mI (9[37m7[37m7) main_tas[37mk[37m: Returned[37m [37mfrom app_ma[37mi[37mn()[0m
+[37m[37m[[37m0;32mI ([37m9[37m87) GATTC:[37m [37mscan start [37ms[37muccess[0m[37m
+[37m[37m[[37m0;32[37mm[37mI (1077) G[37mA[37mTTC: 38 b1 [37m1[37mb db f8 7b[37m [37m[0m
+[0;3[37m2mI (1077) [37mG[37mATTC: searc[37mh[37med Adv Dat[37ma[37m Len 31, Sc[37ma[37mn Response[37m [37mLen 0[0m
+[37m[37m[0;32mI (10[37m7[37m7) GATTC: [37ms[37mearched De[37mv[37mice Name Le[37mn[37m 0[0m
+[[37m0[37m;32mI (1077[37m)[37m GATTC:  [37m[[37m0m
+[37m[37m[[37m0;32mI ([37m1[37m117) GATTC[37m:[37m 7a f2 d3 4[37mb[37m 4d b3 [0[37mm[37m
+[0;32mI[37m [37m(1117) GATT[37mC[37m: searched[37m [37mAdv Data Le[37mn[37m 26, Scan R[37me[37msponse Len[37m [37m25[0m
+[0[37m;[37m32mI (1117[37m)[37m GATTC: sea[37mr[37mched Devic[37me[37m Name Len 2[37m3[37m[0m
+[0;[37m3[37m2mI (1127) [37mG[37mATTC: [LG][37m [37mwebOS TV OL[37m[37m[0m
+[0;3[37m2[37mmI (1127) G[37mA[37mTTC: ED55C[37m7[37mV[0m
+[0;[37m3[37m2mI (1127)[37m [37mGATTC:  [0[37mm[37m
+[37m[37m[[37m0;32mI ([37m1[37m167) GATTC:[37m [37m38 b1 1b d[37mb[37m f8 7b [0m[37m[37m
+[0;32mI ([37m1[37m177) GATTC[37m:[37m searched A[37md[37mv Data Len[37m [37m31, Scan Re[37ms[37mponse Len [37m0[37m[0m
+[0;3[37m2[37mmI (1177) [37mG[37mATTC: searc[37mh[37med Device [37mN[37mame Len 0[[37m0[37mm
+[0;32m[37mI[37m (1177) GAT[37mT[37mC:  [0m
+[37m[37m[[37m0;32mI (1[37m2[37m67) GATTC: [37m3[37m8 b1 1b db[37m [37mf8 7b [0m[37m[37m
+[0;32mI ([37m1[37m277) GATTC:[37m [37msearched A[37md[37mv Data Len[37m [37m31, Scan Re[37ms[37mponse Len [37m0[37m[0m
+[0;3[37m2[37mmI (1277) [37mG[37mATTC: searc[37mh[37med Device N[37ma[37mme Len 0[[37m0[37mm
+[0;32mI[37m [37m(1277) GAT[37mT[37mC:  [0m
+[37m[37m[[37m0;32mI (1357) GATTC: fe[37m [37mac 83 f5 57[37m [37mc8 [0m
+[37m[[37m0;32mI (135[37m7[37m) GATTC: s[37me[37marched Adv [37mD[37mata Len 29[37m,[37m Scan Respo[37mn[37mse Len 17[37m[0m
+[0;32m[37mI[37m (1357) GA[37mT[37mTC: searche[37md[37m Device Na[37mm[37me Len 12[0[37mm[37m
+[0;32mI[37m [37m(1367) GATT[37mC[37m: ScanWatch[37m [37mEC[0m
+[[37m0[37m;32mI (1367[37m)[37m GATTC:  [37m[[37m0m
+[0;32m[37mI[37m (1367) GA[37mT[37mTC: 38 b1 [37m1[37mb db f8 7b [37m[37m[0m
+[0;32[37mm[37mI (1377) G[37mA[37mTTC: search[37me[37md Adv Data[37m [37mLen 31, Sca[37mn[37m Response [37mL[37men 0[0m
+[37m[[37m0;32mI (13[37m7[37m7) GATTC: s[37me[37marched Dev[37mi[37mce Name Len[37m [37m0[0m
+[0[37m;[37m32mI (1387)[37m [37mGATTC:  [[37m0[37mm
+[37m[37m[[37m0;32mI (1[37m4[37m67) GATTC: [37m3[37m8 b1 1b db[37m [37mf8 7b [0m[37m
+[37m[0;32mI ([37m1[37m477) GATTC:[37m [37msearched A[37md[37mv Data Len [37m3[37m1, Scan Re[37ms[37mponse Len 0[37m[37m[0m
+[0;3[37m2[37mmI (1477) G[37mA[37mTTC: searc[37mh[37med Device N[37ma[37mme Len 0[0[37mm[37m
+[0;32mI[37m [37m(1477) GATT[37mC[37m:  [0m
+[37m[37m[[37m0;32mI ([37m1[37m507) GATTC:[37m [37m76 46 55 9[37mf[37m a3 6d [0m[37m[37m
+[0;32mI [37m([37m1507) GATTC[37m:[37m searched [37mA[37mdv Data Len[37m [37m17, Scan R[37me[37msponse Len [37m0[37m[0m
+[0;[37m3[37m2mI (1507) [37mG[37mATTC: searc[37mh[37med Device [37mN[37mame Len 0[37m[[37m0m
+[0;32m[37mI[37m (1507) GA[37mT[37mTC:  [0m
+[37m[37m[[37m0;32mI (1[37m5[37m67) GATTC:[37m [37m38 b1 1b db[37m [37mf8 7b [0m
+[0;32mI ([37m1[37m577) GATTC[37m:[37m searched A[37md[37mv Data Len[37m [37m31, Scan Re[37ms[37mponse Len [37m0[37m[0m
+[0;3[37m2[37mmI (1577) [37mG[37mATTC: searc[37mh[37med Device N[37mame Len 0[[37m0[37mm
+[0;32m[37mI[37m (1577) GAT[37mT[37mC:  [0m
+[37m[37m[0;32mI (1[37m6[37m67) GATTC: [37m3[37m8 b1 1b db[37m [37mf8 7b [0m[37m
+[37m[0;32mI ([37m1[37m677) GATTC:[37m [37msearched Adv Data Len [37m3[37m1, Scan Re[37msponse Len 0[37m[37m[0m
+[0;32[37mmI (1677) G[37mA[37mTTC: searc[37mh[37med Device N[37ma[37mme Len 0[0[37mm[37m
+[0;32mI[37m [37m(1677) GAT[37mT[37mC:  [0m
+[37m[37m[[37m0;32mI (1[37m7[37m67) GATTC:[37m [37m7a f2 d3 4[37mb[37m 4d b3 [0m[37m[37m
+[0;32mI ([37m1[37m767) GATTC[37m:[37m searched A[37md[37mv Data Len[37m [37m26, Scan Re[37ms[37mponse Len [37m2[37m5[0m
+[0;[37m3[37m2mI (1767)[37m [37mGATTC: sear[37mc[37mhed Device[37m [37mName Len 23[37m[37m[0m
+[0;3[37m2[37mmI (1777) G[37mA[37mTTC: [LG] [37mw[37mebOS TV OL[37m[[37m0m
+[0;32[37mm[37mI (1777) GA[37mT[37mTC: ED55C7V[37m[37m[0m
+[0;3[37m2[37mmI (1777) [37mG[37mATTC:  [0m[37m[37m
+[37m[37m[[37m0;32mI [37m([37m1907) GATTC[37m:[37m fe ac 83 [37mf[37m5 57 c8 [0[37mm[37m
+[0;32mI[37m [37m(1907) GATT[37mC[37m: searched[37m [37mAdv Data Le[37mn[37m 29, Scan [37mR[37mesponse Len[37m [37m17[0m
+[[37m0[37m;32mI (1907[37m)[37m GATTC: se[37ma[37mrched Devic[37me[37m Name Len [37m1[37m2[0m
+[0;[37m3[37m2mI (1907) [37mG[37mATTC: Scan[37mW[37match EC[0[37mm[37m
+[0;32mI [37m([37m1917) GATTC[37m:[37m  [0m
+[37m[37m[[37m0;32mI (2047[37m)[37m GATTC: 76[37m [37m46 55 9f a3[37m [37m6d [0m
+[37m[[37m0;32mI (204[37m7[37m) GATTC: s[37me[37marched Adv [37mData Len 17,[37m [37mScan Respo[37mn[37mse Len 0[0[37mm[37m
+[0;32mI[37m [37m(2047) GATT[37mC[37m: searched[37m [37mDevice Nam[37me[37m Len 0[0m[37m
+[37m[0;32mI (2[37m0[37m47) GATTC:[37m [37m [0m
+[37m[37m[[37m0;32mI (22[37m1[37m7) GATTC: [37m3[37m8 b1 1b db[37m f8 7b [0m[37m[37m
+[0;32mI ([37m2[37m227) GATTC:[37m [37msearched A[37md[37mv Data Len [37m3[37m1, Scan Re[37ms[37mponse Len 0[37m[37m[0m
+[0;3[37m2[37mmI (2227) G[37mA[37mTTC: searc[37mh[37med Device N[37ma[37mme Len 0[[37m0[37mm
+[0;32mI[37m [37m(2227) GAT[37mT[37mC:  [0m
+[37m[37m[[37m0;32mI[37m [37m(2257) GATT[37mC[37m: 7a f2 d3[37m [37m4b 4d b3 [[37m0[37mm
+[0;32m[37mI[37m (2257) GAT[37mT[37mC: searche[37md[37m Adv Data L[37me[37mn 26, Scan[37m [37mResponse Le[37mn[37m 25[0m
+[37m[[37m0;32mI (225[37m7[37m) GATTC: s[37me[37marched Devi[37mc[37me Name Len[37m [37m23[0m
+[0[37m;[37m32mI (2267[37m)[37m GATTC: [LG[37m][37m webOS TV O[37mL[37m[0m
+[0;[37m3[37m2mI (2267) [37mG[37mATTC: ED55[37mC[37m7V[0m
+[[37m0;32mI (2277[37m)[37m GATTC:  [[37m0[37mm
+[37m[37m[[37m0;32mI (23[37m1[37m7) GATTC: [37m3[37m8 b1 1b db f8 7b [0m[37m[37m
+[0;32mI ([37m2[37m327) GATTC:[37m [37msearched A[37md[37mv Data Len[37m [37m31, Scan Re[37ms[37mponse Len 0[37m[37m[0m
+[0;3[37m2[37mmI (2327) G[37mA[37mTTC: searc[37mh[37med Device N[37ma[37mme Len 0[[37m0[37mm
+[0;32mI[37m [37m(2327) GAT[37mT[37mC:  [0m
+[37m[37m[0;32mI (2[37m457) GATTC:[37m [37m7a f2 d3 4b[37m [37m4d b3 [0m[37m
+[37m[0;32mI (2457) GATTC:[37m [37msearched A[37md[37mv Data Len[37m [37m26, Scan Re[37ms[37mponse Len 0[37m[37m[0m
+[0;3[37m2mI (2457) G[37mA[37mTTC: searc[37mh[37med Device N[37ma[37mme Len 0[[37m0[37mm
+[0;32mI[37m [37m(2467) GAT[37mT[37mC:  [0m
+[37m[[37m0;32mI (24[37m6[37m7) GATTC: f[37me[37m ac 83 f5 [37m5[37m7 c8 [0m
+[37m[37m[0;32mI (2[37m4[37m67) GATTC: [37ms[37mearched Ad[37mv[37m Data Len 2[37m9[37m, Scan Res[37mp[37monse Len 17[37m[37m[0m
+[0;32[37mm[37mI (2477) G[37mA[37mTTC: searc[37mh[37med Device N[37ma[37mme Len 12[[37m0[37mm
+[0;32m[37mI[37m (2487) GAT[37mT[37mC: ScanWat[37mc[37mh EC[0m
+[37m[[37m0;32mI (24[37m8[37m7) GATTC:  [37m[37m[0m
+[37m[37m[0;[37m3[37m2mI (25[37m2[37m7[37m) GATTC: 38[37m [37mb1 1b db f[37m8[37m 7b [0m
+[37m[[37m0;32mI (25[37m2[37m7) GATTC: s[37me[37marched Adv[37m [37mData Len 31[37m,[37m Scan Resp[37mo[37mnse Len 0[[37m0[37mm
+[0;32m[37mI[37m (2527) GAT[37mT[37mC: searche[37md[37m Device Nam[37me[37m Len 0[0m[37m
+[37m[0;32mI ([37m2[37m527) GATTC[37m:[37m  [0m
+[37m[37m[0;32m[37mI[37m (2857) GAT[37mTC: 7a f2 d[37m3[37m 4b 4d b3 [37m[0m
+[0;32[37mm[37mI (2857) GA[37mT[37mTC: searche[37md[37m Adv Data [37mL[37men 26, Scan[37m Response L[37me[37mn 0[0m
+[37m[[37m0;32mI (285[37m7[37m) GATTC: se[37ma[37mrched Devi[37mc[37me Name Len [37m0[37m[0m
+[0;[37m3[37m2mI (2867) [37mG[37mATTC:  [0[37mm[37m
+[0;32mI [37m([37m2867) GATT[37mC[37m: 76 46 55 [37m9[37mf a3 6d [[37m0[37mm
+[0;32mI[37m [37m(2877) GAT[37mT[37mC: searched[37m [37mAdv Data Le[37mn[37m 17, Scan [37mR[37mesponse Le[37mn[37m 0[0m
+[0[37m;[37m32mI (2877[37m)[37m GATTC: sea[37mr[37mched Device[37m [37mName Len 0[37m[37m[0m
+[0;32[37mm[37mI (2887) G[37mA[37mTTC:  [0m[37m[37m
+[37m[37m[[37m0;32mI (2967) GATTC: [37m3[37m8 b1 1b db[37m f8 7b [0m[37m
+[37m[0;32mI ([37m2[37m977) GATTC:[37m [37msearched A[37md[37mv Data Len [37m3[37m1, Scan Re[37ms[37mponse Len 0[37m[37m[0m
+[0;3[37m2[37mmI (2977) G[37mA[37mTTC: searc[37mh[37med Device N[37ma[37mme Len 0[0[37mm[37m
+[0;32mI[37m [37m(2977) GAT[37mT[37mC:  [0m
+[37m[37m[0[37m;[37m32mI (3017[37m)[37m GATTC: fe [37ma[37mc 83 f5 57[37m [37mc8 [0m
+[[37m0[37m;32mI (301[37m7[37m) GATTC: se[37ma[37mrched Adv [37mD[37mata Len 29,[37m [37mScan Respo[37mn[37mse Len 17[[37m0[37mm
+[0;32m[37mI[37m (3017) GAT[37mT[37mC: searche[37md[37m Device Nam[37me[37m Len 12[0[37mm[37m
+[0;32mI [37m([37m3017) GATT[37mC[37m: ScanWatch[37m [37mEC[0m
+[0[37m;[37m32mI (3027[37m)[37m GATTC:  [37m[[37m0m
+[37m[37m[0;3[37m2[37mmI (3077) GA[37mT[37mTC: 38 b1[37m [37m1b db f8 7b[37m [37m[0m
+[0;3[37m2[37mmI (3077) [37mG[37mATTC: sear[37mc[37mhed Adv Dat[37ma[37m Len 31, Sc[37ma[37mn Response[37m [37mLen 0[0m[37m
+[37m[0;32mI (3[37m0[37m77) GATTC: [37ms[37mearched De[37mv[37mice Name Le[37mn[37m 0[0m
+[[37m0[37m;32mI (3077[37m)[37m GATTC:  [37m[[37m0m
+[37m[37m[[37m0;32mI [37m([37m3167) GATTC[37m:[37m 38 b1 1b d[37mb[37m f8 7b [0[37mm[37m
+[0;32mI[37m [37m(3177) GATT[37mC[37m: searched[37m [37mAdv Data Le[37mn[37m 31, Scan [37mR[37mesponse Len[37m [37m0[0m
+[0;[37m3[37m2mI (3177)[37m [37mGATTC: sear[37mc[37mhed Device[37m [37mName Len 0[37m[[37m0m
+[0;32[37mm[37mI (3177) GA[37mT[37mTC:  [0m[37m
+[37m[37m[0[37m;[37m32mI (3207[37m)[37m GATTC: 7a [37mf[37m2 d3 4b 4d[37m [37mb3 [0m
+[37m[[37m0;32mI (320[37m7[37m) GATTC: se[37ma[37mrched Adv [37mD[37mata Len 26,[37m [37mScan Respo[37mn[37mse Len 25[[37m0[37mm
+[0;32m[37mI[37m (3207) GAT[37mT[37mC: searche[37md[37m Device Nam[37me[37m Len 23[0[37mm[37m
+[0;32mI [37m(3217) GATTC[37m:[37m [LG] webO[37mS[37m TV OL[0m[37m[37m
+[0;32mI ([37m3[37m217) GATTC:[37m [37mED55C7V[0[37mm[37m
+[0;32mI[37m [37m(3217) GATT[37mC[37m:  [0m
+[37m[37m[[37m0;32mI (3[37m2[37m67) GATTC: [37m38 b1 1b db[37m [37mf8 7b [0m[37m
+[37m[0;32mI ([37m3[37m277) GATTC:[37m [37msearched A[37md[37mv Data Len [37m3[37m1, Scan Re[37ms[37mponse Len 0[37m[37m[0m
+[0;3[37m2[37mmI (3277) G[37mA[37mTTC: searc[37mh[37med Device N[37ma[37mme Len 0[[37m0[37mm
+[0;32mI[37m [37m(3277) GATT[37mC[37m:  [0m
+[37m[37m[0;32mI (3[37m3[37m67) GATTC: [37m3[37m8 b1 1b db[37m [37mf8 7b [0m[37m
+[37m[0;32mI (3[37m3[37m77) GATTC:[37m [37msearched A[37md[37mv Data Len [37m3[37m1, Scan Re[37ms[37mponse Len 0[37m[37m[0m
+[0;3[37m2[37mmI (3377) G[37mA[37mTTC: search[37me[37md Device N[37ma[37mme Len 0[0[37mm[37m
+[0;32mI[37m [37m(3377) GATT[37mC[37m:  [0m
+[37m[37m[0;32mI (3[37m4[37m67) GATTC: [37m3[37m8 b1 1b db [37mf[37m8 7b [0m[37m
+[37m[0;32mI (3477) GATTC:[37m [37msearched A[37mdv Data Len [37m3[37m1, Scan Re[37ms[37mponse Len 0[37m[37m[0m
+[0;32[37mm[37mI (3477) G[37mA[37mTTC: searc[37mh[37med Device N[37ma[37mme Len 0[0[37mm[37m
+[0;32mI[37m [37m(3477) GATT[37mC[37m:  [0m
+[37m[37m[0;32mI ([37m3[37m517) GATTC[37m:[37m 7a f2 d3 4[37mb[37m 4d b3 [0[37mm[37m
+[0;32mI [37m([37m3527) GATT[37mC[37m: searched [37mA[37mdv Data Le[37mn[37m 26, Scan R[37me[37msponse Len [37m2[37m5[0m
+[0[37m;[37m32mI (3527[37m)[37m GATTC: sea[37mr[37mched Device[37m [37mName Len 2[37m3[37m[0m
+[0;[37m3[37m2mI (3527) [37mG[37mATTC: [LG] [37mw[37mebOS TV OL[37m[37m[0m
+[0;3[37m2[37mmI (3527) G[37mA[37mTTC: ED55C7[37mV[37m[0m
+[0;[37m3[37m2mI (3537) [37mG[37mATTC:  [0[37mm[37m
+[37m[37m[[37m0;32mI (3567[37m)[37m GATTC: 38 [37mb[37m1 1b db f8[37m [37m7b [0m
+[[37m0[37m;32mI (356[37m7[37m) GATTC: se[37ma[37mrched Adv [37mD[37mata Len 31,[37m [37mScan Respo[37mn[37mse Len 0[0[37mm[37m
+[0;32mI[37m [37m(3567) GATT[37mC[37m: searched[37m [37mDevice Name[37m [37mLen 0[0m[37m
+[37m[0;32mI (3[37m5[37m67) GATTC: [37m [37m[0m
+[0;[37m3[37m2mI (3567) [37mG[37mATTC: fe a[37mc[37m 83 f5 57 c[37m8[37m [0m
+[0[37m;[37m32mI (3577[37m)[37m GATTC: sea[37mr[37mched Adv Da[37mt[37ma Len 29, [37mS[37mcan Respons[37me[37m Len 17[0[37mm[37m
+[0;32mI [37m([37m3587) GATT[37mC[37m: searched [37mD[37mevice Name[37m [37mLen 12[0m[37m
+[37m[0;32mI ([37m3[37m587) GATTC:[37m [37mScanWatch E[37mC[37m[0m
+[0;[37m3[37m2mI (3587)[37m [37mGATTC:  [0[37mm[37m
+[37m[37m[0;32mI (3[37m6[37m67) GATTC: 38 b1 1b db f8 7b [0m
+[0;32mI (3677) GATTC: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (3677) GATTC: searched Device N[37mame Len 0[[37m0m
+[0;32mI[37m [37m(3677) GAT[37mT[37mC:  [0m
+[37m[37m[0;32mI (3767) GATTC: [37m38 b1 1b db [37mf[37m8 7b [0m[37m
+[37m[0;32mI (3777) GATTC:[37m [37msearched Ad[37mv Data Len 3[37m1[37m, Scan Res[37mp[37monse Len 0[37m[37m[0m
+[0;32[37mmI (3777) GA[37mT[37mTC: search[37me[37md Device Na[37mm[37me Len 0[0[37mm[37m
+[0;32mI [37m([37m3777) GATT[37mC[37m:  [0m
+[37m[37m[0;32m[37mI[37m (4017) GA[37mT[37mTC: 7a f2 d[37m3[37m 4b 4d b3 [37m[0m
+[0;32[37mm[37mI (4017) GA[37mT[37mTC: search[37me[37md Adv Data [37mL[37men 26, Sca[37mn Response L[37me[37mn 25[0m
+[37m[37m[0;32mI (40[37m1[37m7) GATTC: [37ms[37mearched Dev[37mi[37mce Name Len[37m [37m23[0m
+[[37m0[37m;32mI (401[37m7[37m) GATTC: [L[37mG[37m] webOS TV[37m [37mOL[0m
+[0[37m;[37m32mI (4027[37m)[37m GATTC: ED5[37m5[37mC7V[0m
+[37m[[37m0;32mI (402[37m7[37m) GATTC:  [37m[[37m0m
+[37m[37m[0;32m[37mI (4117) GA[37mT[37mTC: fe ac 8[37m3[37m f5 57 c8 [37m[[37m0m
+[0;32[37mm[37mI (4117) GA[37mT[37mTC: search[37me[37md Adv Data [37mL[37men 29, Sca[37mn[37m Response L[37me[37mn 17[0m
+[37m[37m[0;32mI (41[37m1[37m7) GATTC: [37ms[37mearched Dev[37mi[37mce Name Le[37mn[37m 12[0m
+[[37m0[37m;32mI (411[37m7[37m) GATTC: Sc[37ma[37mnWatch EC[37m[[37m0m
+[0;32m[37mI[37m (4127) GAT[37mT[37mC:  [0m
+[37m[37m[0;32mI ([37m4[37m507) GATTC[37m: 76 46 55 [37m9[37mf a3 6d [0[37mm[37m
+[0;32mI [37m([37m4507) GATT[37mC[37m: searched [37mA[37mdv Data Le[37mn[37m 17, Scan R[37me[37msponse Len[37m [37m0[0m
+[0;[37m3[37m2mI (4507)[37m [37mGATTC: sear[37mc[37mhed Device[37m [37mName Len 0[37m[[37m0m
+[0;32[37mm[37mI (4507) GA[37mT[37mTC:  [0m[37m
+[37m[0;32mI (4[37m5[37m17) GATTC:[37m [37m7a f2 d3 4b[37m [37m4d b3 [0m[37m[37m
+[0;32mI ([37m4[37m517) GATTC:[37m [37msearched A[37md[37mv Data Len [37m2[37m6, Scan Re[37ms[37mponse Len [37m2[37m5[0m
+[0;[37m3[37m2mI (4527) [37mG[37mATTC: sear[37mc[37mhed Device [37mN[37mame Len 23[37m[37m[0m
+[0;32[37mm[37mI (4527) G[37mA[37mTTC: [LG] w[37me[37mbOS TV OL[37m[[37m0m
+[0;32m[37mI[37m (4527) GA[37mT[37mTC: ED55C7V[37m[37m[0m
+[0;32[37mm[37mI (4537) G[37mA[37mTTC:  [0m[37m[37m
+[37m[37m[0;32m[37mI (4667) GAT[37mT[37mC: 7a f2 d[37m3[37m 4b 4d b3 [37m[[37m0m
+[0;32[37mm[37mI (4667) GA[37mT[37mTC: search[37me[37md Adv Data [37mL[37men 26, Sca[37mn[37m Response L[37me[37mn 25[0m
+[37m[37m[0;32mI (46[37m6[37m7) GATTC: [37ms[37mearched Dev[37mi[37mce Name Le[37mn[37m 23[0m
+[[37m0[37m;32mI (467[37m7[37m) GATTC: [L[37mG[37m] webOS TV[37m [37mOL[0m
+[0[37m;[37m32mI (4677[37m)[37m GATTC: ED5[37m5[37mC7V[0m
+[37m[[37m0;32mI (467[37m7[37m) GATTC:  [37m[[37m0m
+[0;32[37mm[37mI (4687) GA[37mT[37mTC: fe ac [37m8[37m3 f5 57 c8 [37m[37m[0m
+[0;3[37m2[37mmI (4687) G[37mA[37mTTC: searc[37mh[37med Adv Data[37m [37mLen 29, Sc[37ma[37mn Response [37mL[37men 17[0m[37m
+[37m[0;32mI (4[37m6[37m97) GATTC:[37m [37msearched De[37mv[37mice Name Le[37mn[37m 12[0m
+[37m[[37m0;32mI (469[37m7[37m) GATTC: S[37mc[37manWatch EC[37m[[37m0m
+[0;32[37mm[37mI (4707) G[37mA[37mTTC:  [0m[37m
+[37m[37m[[37m0;32mI (4[37m7[37m17) GATTC:[37m [37m38 b1 1b db[37m [37mf8 7b [0m[37m
+[37m[0;32mI ([37m4[37m727) GATTC:[37m [37msearched A[37md[37mv Data Len [37m3[37m1, Scan Re[37ms[37mponse Len 0[37m[37m[0m
+[0;3[37m2[37mmI (4727) G[37mA[37mTTC: searc[37mh[37med Device N[37ma[37mme Len 0[[37m0[37mm
+[0;32mI[37m [37m(4727) GATT[37mC[37m:  [0m
+[37m[37m[[37m0;[37m3[37m2mI (4757) [37mG[37mATTC: 76 4[37m6[37m 55 9f a3 6[37md[37m [0m
+[0[37m;[37m32mI (4757)[37m [37mGATTC: sea[37mr[37mched Adv Da[37mt[37ma Len 17, [37mS[37mcan Respons[37me[37m Len 0[0m[37m[37m
+[0;32mI ([37m4[37m757) GATTC:[37m [37msearched D[37me[37mvice Name L[37me[37mn 0[0m
+[37m[[37m0;32mI (476[37m7[37m) GATTC:  [37m[37m[0m
+[37m[37m[0;32mI (48[37m1[37m7) GATTC: [37m3[37m8 b1 1b db [37mf[37m8 7b [0m[37m
+[37m[0;32mI (4[37m8[37m27) GATTC:[37m [37msearched Ad[37mv[37m Data Len 3[37m1[37m, Scan Res[37mp[37monse Len 0[37m[37m[0m
+[0;32[37mm[37mI (4827) G[37mA[37mTTC: search[37me[37md Device N[37ma[37mme Len 0[0[37mm[37m
+[0;32mI [37m([37m4827) GATT[37mC[37m:  [0m
+[37m[37m[0;32mI (4[37m9[37m17) GATTC: [37m3[37m8 b1 1b db [37mf[37m8 7b [0m[37m
+[37m[0;32mI (4[37m9[37m27) GATTC:[37m [37msearched Ad[37mv[37m Data Len [37m3[37m1, Scan Res[37mp[37monse Len 0[37m[37m[0m
+[0;32[37mm[37mI (4927) G[37mA[37mTTC: search[37me[37md Device N[37ma[37mme Len 0[0[37mm[37m
+[0;32mI[37m [37m(4927) GATT[37mC[37m:  [0m
+[37m[37m[0;3[37m2[37mmI[37m [37m(5027[37m)[37m GATTC: 38[37m [37mb1 1b db f[37m8[37m 7b [0m
+[37m[0;32mI (502[37m7[37m) GATTC: s[37mearched Adv [37mD[37mata Len 31[37m,[37m Scan Respo[37mn[37mse Len 0[[37m0[37mm
+[0;32mI[37m (5027) GAT[37mT[37mC: searched[37m [37mDevice Name[37m [37mLen 0[0m[37m
+[37m[0;32mI ([37m5[37m027) GATTC:[37m [37m [0m
+[37m[37m[0;32mI ([37m5[37m117) GATTC:[37m [37m38 b1 1b d[37mb[37m f8 7b [0[37mm
+[0;32mI [37m([37m5127) GATTC[37m:[37m searched [37mA[37mdv Data Len[37m [37m31, Scan R[37me[37msponse Len [37m0[37m[0m
+[0;[37m3[37m2mI (5127) [37mG[37mATTC: sear[37mc[37mhed Device [37mName Len 0[37m[[37m0m
+[0;32m[37mI[37m (5127) GA[37mT[37mTC:  [0m
+[37m[37m[0;32mI (5517) GATTC: [37m7a f2 d3 4b [37m4[37md b3 [0m[37m
+[37m[0;32mI (5527) GATTC:[37m [37msearched Ad[37mv[37m Data Len [37m2[37m6, Scan Res[37mponse Len 0[37m[[37m0m
+[0;32[37mmI (5527) GA[37mT[37mTC: search[37me[37md Device Na[37mm[37me Len 0[0[37mm[37m
+[0;32mI[37m [37m(5527) GATT[37mC[37m:  [0m
+[[37m0[37m;32mI (552[37m7[37m) GATTC: 4e[37m [37md8 0c 16 5[37m2[37m 9c [0m
+[37m[[37m0;32mI (55[37m3[37m7) GATTC: s[37me[37marched Adv[37m [37mData Len 17[37m,[37m Scan Resp[37mo[37mnse Len 0[[37m0[37mm
+[0;32m[37mI[37m (5537) GAT[37mT[37mC: searched[37m [37mDevice Nam[37me[37m Len 0[0m[37m
+[37m[0;32mI ([37m5[37m547) GATTC:[37m [37m [0m
+[37m[37m[[37m0;32mI (5[37m5[37m67) GATTC: [37m3[37m8 b1 1b db [37mf[37m8 7b [0m[37m
+[37m[0;32mI (5[37m5[37m77) GATTC:[37m [37msearched Ad[37mv[37m Data Len [37m3[37m1, Scan Re[37ms[37mponse Len 0[37m[37m[0m
+[0;3[37m2[37mmI (5577) G[37mA[37mTTC: search[37me[37md Device N[37ma[37mme Len 0[0[37mm[37m
+[0;32mI[37m [37m(5577) GATT[37mC[37m:  [0m
+[37m[37m[0;32mI ([37m5[37m667) GATTC[37m:[37m 38 b1 1b [37md[37mb f8 7b [0[37mm[37m
+[0;32mI [37m(5677) GATT[37mC[37m: searched [37mA[37mdv Data Le[37mn[37m 31, Scan R[37me[37msponse Len[37m [37m0[0m
+[0;[37m32mI (5677)[37m [37mGATTC: sear[37mc[37mhed Device[37m [37mName Len 0[37m[[37m0m
+[0;32[37mm[37mI (5677) GA[37mT[37mTC:  [0m
+[37m[37m[[37m0;32mI (57[37m6[37m7) GATTC: [37m3[37m8 b1 1b db[37m [37mf8 7b [0m[37m
+[37m[0;32mI ([37m5[37m777) GATTC:[37m [37msearched A[37md[37mv Data Len [37m3[37m1, Scan Res[37mp[37monse Len 0[37m[37m[0m
+[0;32[37mm[37mI (5777) G[37mA[37mTTC: search[37me[37md Device N[37ma[37mme Len 0[[37m0[37mm
+[0;32mI[37m [37m(5777) GATT[37mC[37m:  [0m
+[37m[37m[[37m0;32mI ([37m5[37m797) GATTC[37m:[37m 7a f2 d3 4[37mb[37m 4d b3 [0[37mm[37m
+[0;32mI [37m([37m5797) GATT[37mC[37m: searched [37mA[37mdv Data Le[37mn[37m 26, Scan R[37me[37msponse Len [37m2[37m5[0m
+[0[37m;[37m32mI (5797[37m)[37m GATTC: sea[37mr[37mched Device[37m [37mName Len 2[37m3[37m[0m
+[0;3[37m2[37mmI (5807) [37mG[37mATTC: [LG][37m [37mwebOS TV OL[37m[37m[0m
+[0;32[37mm[37mI (5807) G[37mA[37mTTC: ED55C7[37mV[37m[0m
+[0;[37m3[37m2mI (5807) [37mG[37mATTC:  [0[37mm[37m
+[37m[37m[[37m0;32[37mm[37mI (5857) GA[37mT[37mTC: 76 46 [37m5[37m5 9f a3 6d [37m[37m[0m
+[0;3[37m2[37mmI (5857) G[37mA[37mTTC: searc[37mh[37med Adv Data[37m [37mLen 17, Sc[37ma[37mn Response [37mL[37men 0[0m
+[37m[37m[0;32mI (58[37m5[37m7) GATTC: s[37me[37marched Dev[37mi[37mce Name Le[37mn[37m 0[0m
+[0[37m;[37m32mI (5857[37m)[37m GATTC:  [[37m0[37mm
+[0;32m[37mI[37m (5867) GAT[37mT[37mC: 38 b1 1b[37m [37mdb f8 7b [37m[[37m0m
+[0;32m[37mI[37m (5867) GA[37mT[37mTC: searche[37md[37m Adv Data [37mL[37men 31, Scan[37m [37mResponse L[37me[37mn 0[0m
+[[37m0[37m;32mI (587[37m7[37m) GATTC: se[37ma[37mrched Devi[37mc[37me Name Len [37m0[37m[0m
+[0;[37m3[37m2mI (5877) [37mG[37mATTC:  [0[37mm[37m
+[37m[37m[[37m0;32mI ([37m6[37m017) GATTC[37m:[37m 7a f2 d3 4[37mb[37m 4d b3 [0[37mm[37m
+[0;32mI [37m([37m6017) GATT[37mC[37m: searched [37mA[37mdv Data Len[37m [37m26, Scan R[37me[37msponse Len[37m [37m0[0m
+[0;[37m3[37m2mI (6017)[37m [37mGATTC: sear[37mc[37mhed Device[37m [37mName Len 0[37m[[37m0m
+[0;32[37mm[37mI (6027) GA[37mT[37mTC:  [0m
+[37m[37m[0;32mI (6[37m0[37m27) GATTC: [37m8[37m9 bd 71 8c[37m [37med 2d [0m[37m
+[37m[0;32mI ([37m6[37m027) GATTC[37m:[37m searched A[37md[37mv Data Len [37m7[37m, Scan Res[37mp[37monse Len 18[37m[37m[0m
+[0;3[37m2[37mmI (6037) G[37mA[37mTTC: searc[37mh[37med Device N[37ma[37mme Len 16[37m[[37m0m
+[0;32m[37mI[37m (6037) GA[37mT[37mTC: Humidit[37my[37m monitor[0[37mm[37m
+[0;32mI[37m [37m(6047) GATT[37mC[37m:  [0m
+[37m[[37m0;32mI (60[37m4[37m7) GATTC: s[37me[37marched dev[37mi[37mce Humidity[37m [37mmonitor[0m[37m[37m
+[0;32mI [37m([37m6057) GATTC[37m:[37m connect t[37mo[37m the remote[37m [37mdevice.[0[37mm[37m
+[0;32mI [37m([37m6067) GATT[37mC[37m: stop scan[37m [37msuccessful[37ml[37my[0m
+[37m[37m[[37m0;32mI (64[37m07) GATTC:[37m [37mESP_GATTC_C[37mO[37mNNECT_EVT [37mc[37monn_id 0, i[37mf[37m 3[0m
+[0[37m;[37m32mI (6407[37m)[37m GATTC: RE[37mM[37mOTE BDA:[0[37mm[37m
+[0;32mI [37m([37m6407) GATT[37mC[37m: 89 bd 71[37m [37m8c ed 2d [[37m0[37mm
+[0;32mI[37m [37m(6407) GAT[37mT[37mC: open su[37mc[37mcess[0m
+[37m[37m[[37m0;32mI (68[37m2[37m7) GATTC: d[37mi[37mscover ser[37mv[37mice complet[37me[37m conn_id 0[37m[37m[0m
+[0;32[37mmI (6827) G[37mA[37mTTC: SEARCH[37m RES: conn_[37mi[37md = 0 is pr[37mi[37mmary servi[37mc[37me 1[0m
+[[37m0[37m;32mI (682[37m7[37m) GATTC: st[37ma[37mrt handle 10[37m [37mend handl[37me[37m 14 curren[37mt[37m handle val[37mu[37me 10[0m
+[37m[[37m0;32mI (68[37m2[37m7) GATTC: s[37me[37mrvice foun[37md[37m[0m
+[0;3[37m2[37mmI (6837) [37mG[37mATTC: UUID1[37m6[37m: 181a[0m[37m[37m
+[0;32mI ([37m6[37m837) GATTC[37m:[37m Get servic[37me[37m informati[37mo[37mn from remo[37mt[37me device[[37m0[37mm
+[0;32mI[37m [37m(6847) GATT[37mC[37m: ESP_GATT[37mC[37m_SEARCH_CMP[37mL[37m_EVT[0m
+[37m[37m[0;32mI (6[37m8[37m57) GATTC: [37mE[37mSP_GATTC_CF[37mG[37m_MTU_EVT, [37mS[37mtatus 0, M[37mT[37mU 247, conn[37m_[37mid 0[0m
+[37m[[37m0;32mI (68[37m5[37m7) GATTC: E[37mS[37mP_GATTC_RE[37mG[37m_FOR_NOTIFY[37m_[37mEVT[0m
+[37m[37m[[37m0;32mI[37m [37m(6907) GATT[37mC[37m: write des[37mc[37mr success [37m[37m[0m
+[37m[37m[[37m0;31m[37mE[37m (6937) GA[37mT[37mTC: write c[37mh[37mar failed,[37m [37merror statu[37ms[37m = 3[0m
+[37m[37m[0;32mI (23917) GATTC: ESP_GATTC_NOTIFY_EVT, receive notify value:[0m
+[[37m0;32mI (239[37m17) GATTC: 4[37m4[37m 16 00 00 [37m[[37m0m
+Value [37mi[37mn decimal: [37m5[37m7%
+[37m[37m[0;32[37mm[37mI (24117) G[37mA[37mTTC: ESP_G[37mA[37mTTC_NOTIFY_[37mE[37mVT, receiv[37me notify val[37mu[37me:[0m
+[[37m0[37m;32mI (2411[37m7[37m) GATTC: 0[37mc[37m 17 00 00 [37m[[37m0m
+Value [37mi[37mn decimal: [37m5[37m9%
+[37m[37m[[37m0;32mI (391[37m5[37m7) GATTC: [37mE[37mSP_GATTC_NO[37mT[37mIFY_EVT, re[37mc[37meive notif[37my[37m value:[0m[37m[37m
+[0;32mI [37m([37m39167) GATT[37mC[37m: a8 16 00[37m [37m00 [0m
+Va[37ml[37mue in deci[37mm[37mal: 58%
+[37m[37m[[37m0;32mI[37m [37m(56197) GAT[37mT[37mC: ESP_GAT[37mT[37mC_NOTIFY_E[37mV[37mT, receive [37mn[37motify valu[37me[37m:[0m
+[0;[37m3[37m2mI (56207[37m)[37m GATTC: e0 [37m1[37m5 00 00 [0[37mm[37m
+Value in[37m [37mdecimal: 5[37m6[37m%
+[37m[37m[[37m0;32mI [37m([37m89267) GAT[37mT[37mC: ESP_GATT[37mC[37m_NOTIFY_EV[37mT[37m, receive n[37mo[37mtify value[37m:[37m[0m
+[0;3[37m2mI (89267)[37m [37mGATTC: 7c 1[37m5[37m 00 00 [0[37mm[37m
+Value in [37md[37mecimal: 55[37m%[37m
