@@ -282,8 +282,8 @@ static void gattc_profile_event_handler(esp_gattc_cb_event_t event, esp_gatt_if_
                 and it's valid only for little endian (which xtensa is).
         */
         uint8_t* buff = p_data->notify.value;
-        int k = buff[0]|(buff[1]<<8)|(buff[2]<<16)|(buff[3]<<24);
-        printf("Value in decimal: %d%%\n\n", k / 100);
+        uint32_t k = buff[0]|(buff[1]<<8)|(buff[2]<<16)|(buff[3]<<24);
+        printf("Value in decimal: %.2f%%\n\n", (float)k / 100);
         break;
     case ESP_GATTC_WRITE_DESCR_EVT:
         if (p_data->write.status != ESP_GATT_OK){
