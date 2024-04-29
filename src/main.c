@@ -262,25 +262,28 @@ static void gattc_profile_event_handler(esp_gattc_cb_event_t event, esp_gatt_if_
             ESP_LOGI(GATTC_TAG, "ESP_GATTC_NOTIFY_EVT, receive indicate value:");
         }
         esp_log_buffer_hex(GATTC_TAG, p_data->notify.value, p_data->notify.value_len);
-
         /*
             p_data->notify.value is a pointer of uint8_t, so I want a 32 bit integer
             p_data->notify.value_len is always 4. Two way to convert in decimal the 
             bytes received.
 
-            FIRST WAY:     
-                This will promote single byte to 32 bit number, rearraing its 4 bytes in order   
-                uint8_t* buff = p_data->notify.value;
-                int k = buff[0]|(buff[1]<<8)|(buff[2]<<16)|(buff[3]<<24);
+            FIRST WAY:   
+                Use the little endian memory model of the xtensa inside the
+                esp32. Good, but it's undefined behaviour (though, it works on xtensa LX6)
+                See <https://gist.github.com/shafik/848ae25ee209f698763cffee272a58f8>
+                    uint32_t* k = (uint32_t *)p_data->notify.value; 
+                
+                So use memcpy instead:
+                    uint32_t k = 0;
+                    memcpy(&k, p_data->notify.value, sizeof(uint32_t));
 
             SECOND WAY:
-                Use the little endian memory model of the xtensa inside the
-                esp32. See below.
-
+                This will promote single byte to 32 bit number, arranging its 4 bytes in order
+                and it's valid only for little endian (which xtensa is).
         */
-
-        uint32_t* k = (uint32_t *)p_data->notify.value;
-        printf("Value in decimal: %d%%\n\n", *((int *)k) / 100);
+        uint8_t* buff = p_data->notify.value;
+        int k = buff[0]|(buff[1]<<8)|(buff[2]<<16)|(buff[3]<<24);
+        printf("Value in decimal: %d%%\n\n", k / 100);
         break;
     case ESP_GATTC_WRITE_DESCR_EVT:
         if (p_data->write.status != ESP_GATT_OK){
