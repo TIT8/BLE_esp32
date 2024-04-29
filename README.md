@@ -12,7 +12,7 @@ You have to connect the esp32 to the serial in order to see the received data (o
 
 ![Screenshot (104)](https://github.com/TIT8/BLE_esp32/assets/68781644/b1fac8e4-7b08-4dc1-9ee2-ce851c011d54)
 
-## Float value from sensor
+## Float values from sensor
 
 I was not interested in the values coming from the BLE central (Google can also say the humidity of a location), but in the future I can make this better. Remember this [reference](https://forum.arduino.cc/t/passing-a-floating-point-number-via-ble/1155922) and modify this section to "create" a float from the byte stream:
 ```C
