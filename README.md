@@ -48,3 +48,20 @@ See this [reference](https://forum.arduino.cc/t/passing-a-floating-point-number-
         printf("Value in decimal: %.2f%%\n\n", (float)k / 100);
         break;
 ```
+
+And remember this in the future:
+
+```c
+// Transmitting float https://github.com/adafruit/Adafruit_BluefruitLE_nRF51/blob/master/examples/healththermometer/IEEE11073float.cpp
+
+  //Receiving float
+  float IEEE11073_2float(uint8_t *dat)
+  {
+      int32_t Mantissa = (dat[2] << 16 | dat[1] << 8 | dat[0]);
+      uint8_t Neg = bitRead(dat[2],7);
+      int8_t fExp = dat[3];
+      if (Neg) Mantissa |= 255 << 24;
+      return (float(Mantissa) * pow(10, fExp));
+  }
+
+```
