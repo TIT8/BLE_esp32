@@ -48,21 +48,22 @@ See this [reference](https://forum.arduino.cc/t/passing-a-floating-point-number-
         /*
             Then, if you really need a float you can use union (if the software is compliled with
             a conforming ISO C compiler, like xtensa-gcc tools):
+
                 union{
             		uint8_t i[4];     // Or use a uint32_t and fill it like "k" above
             		float f;
             	} u;
-            	for(int o = 0; o < 4; o++)
+            	for(int o = 0; o < 4; o++)    // Not need if uint32_t is used in the union
             	{
             		u.i[o] = buff[o];
             	}
                 printf("float union %.3f\n", u.f);
 
-                Otherwise send a uint32_t multiplied by 100 and, when received, divide by 100
-                keeping the float value.
-                The humidity is a percentage with not so great and so low value,
-                otherwise you won't be capable of read this. So I think this method is enough
-                for the application.
+            Otherwise send a uint32_t multiplied by 100 and, when received, divide by 100
+            keeping the float value.
+            The humidity is a percentage with not so great and so low value,
+            otherwise you won't be capable of read this. So I think this method is enough
+            for the application.
         */
         printf("Value in decimal: %.2f%%\n\n", (float)k / 100);
         break;
