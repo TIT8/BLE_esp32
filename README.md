@@ -48,7 +48,7 @@ See this [reference](https://forum.arduino.cc/t/passing-a-floating-point-number-
             Then if you really need a float you can use union (if the software is compliled with
             a conforming ISO C compiler):
                 union{
-            		uint8_t i[4];
+            		uint8_t i[4];     // Or use a uint32_t as fill it like "k" below
             		float f;
             	} u;
             	for(int o = 0; o < 4; o++)
