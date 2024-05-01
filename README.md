@@ -44,6 +44,21 @@ See this [reference](https://forum.arduino.cc/t/passing-a-floating-point-number-
                 and it's valid only for little endian (which xtensa is).
         */
         uint8_t* buff = p_data->notify.value;
+        /*
+            Then if you really need a float you can use union (if the software is compliled with
+            a conforming ISO C compiler):
+                union{
+            		uint8_t i[4];
+            		float f;
+            	} u;
+            	for(int o = 0; o < 4; o++)
+            	{
+            		u.i[o] = buff[o];
+            	}
+                printf("float union %.3f\n", u.f);
+        */
+        // Otherwise send a uint32_t multiplied by 100 and when received divide by 100 keeping the float value.
+        // The humidity is a percentage with not so great and so low value, otherwise you won't be capable of read this.
         uint32_t k = buff[0] | buff[1] << 8 | buff[2] << 16 | buff[3] << 24;
         printf("Value in decimal: %.2f%%\n\n", (float)k / 100);
         break;
