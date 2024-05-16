@@ -14,7 +14,7 @@ You have to connect the esp32 to the serial in order to see the received data (o
 
 ## Float values from sensor
 
-See this [reference](https://forum.arduino.cc/t/passing-a-floating-point-number-via-ble/1155922), it explains why I divide for 100 in the code below, while [sending uint32_t data](https://github.com/TIT8/BLE-sensor_PDM-microphone/blob/cad7776612e74c846272bd7182108c19a3b8fe7a/src/main.cpp#L37):
+See this [reference](https://forum.arduino.cc/t/passing-a-floating-point-number-via-ble/1155922), it explains why I divide for 100 in the code below, while [sending uint32_t data](https://github.com/TIT8/BLE-sensor_PDM-microphone/blob/cad7776612e74c846272bd7182108c19a3b8fe7a/src/main.cpp#L37). So, it's more like fixed point than floating point.
 
 ```C
     case ESP_GATTC_NOTIFY_EVT:
